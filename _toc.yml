@@ -1,11 +1,11 @@
 format: jb-book
 root: index
 parts:
-  - caption: Introduction
+  - caption: 引言
     chapters:
       - file: fem
       - file: Changelog
-  - caption: Fundamentals
+  - caption: 基本使用
     chapters:
       - file: chapter1/fundamentals
         sections:
