@@ -1,12 +1,11 @@
 # Poisson方程
 
-Authors: Hans Petter Langtangen, Anders Logg 
-
-Adapted to FEniCSx by Jørgen S. Dokken 
-
+作者: Hans Petter Langtangen, Anders Logg 
 翻译：马鹏飞
+由 Jørgen S. Dokken 更新到 FEniCSx 
 
 The goal of this tutorial is to solve one of the most basic PDEs, the Poisson equations, with a few lines of code in FEniCSx. We start by introducing the most fundamental FEniCSx objects, such as `Function`, `FunctionSpace`, `TrialFunction` and `TestFunction`, and learn how to write a basic PDE solver. 
+
 This will include:
 - How to formulate a mathematical variational problem
 - How to apply boundary conditions
