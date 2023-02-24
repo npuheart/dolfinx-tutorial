@@ -16,7 +16,7 @@ parts:
         sections:
           - file: chapter1/membrane_code
           - file: chapter1/membrane_paraview
-  - caption: A Gallery of finite element solvers
+  - caption: 有限元求解器概览
     chapters:
       - file: chapter2/intro
       - file: chapter2/heat_equation
@@ -35,7 +35,7 @@ parts:
           - file: chapter2/ns_code1
           - file: chapter2/ns_code2
       - file: chapter2/hyperelasticity
-  - caption: Subdomains and boundary conditions
+  - caption: 子区域和边界条件
     chapters:
       - file: chapter3/neumann_dirichlet_code
       - file: chapter3/multiple_dirichlet
@@ -43,7 +43,7 @@ parts:
       - file: chapter3/robin_neumann_dirichlet
       - file: chapter3/component_bc
       - file: chapter3/em
-  - caption: Improving your FEniCSx code
+  - caption: 代码的改进
     chapters:
       - file: chapter4/solvers
       - file: chapter4/compiler_parameters
