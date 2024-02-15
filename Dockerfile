@@ -1,4 +1,4 @@
-FROM dolfinx/lab:latest
+FROM ghcr.io/jorgensd/dolfinx-tutorial:v0.7.2
 
 RUN apt update && apt install -y openssh-server
 RUN mkdir ~/.ssh

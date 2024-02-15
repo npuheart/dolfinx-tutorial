@@ -3,12 +3,12 @@
 
 title: FEniCSx tutorial
 author: Jørgen S. Dokken
-logo: logo.jpeg
+logo: fenics_logo.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: force
+  execute_notebooks: cache
 
   # Set timeout for any example to 20 minutes
   timeout: 1800
@@ -21,12 +21,25 @@ execute:
 repository:
   url: https://github.com/jorgensd/dolfinx-tutorial # Online location of your book
   path_to_book: . # Optional path to your book, relative to the repository root
-  branch: dokken/jupyterbook # Which branch of the repository should be used when creating links (optional)
+  branch: main # Which branch of the repository should be used when creating links (optional)
 
   # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
   - references.bib
 
+launch_buttons:
+  notebook_interface: "jupyterlab"
+  binderhub_url: "https://mybinder.org"
+
+sphinx:
+  config:
+    html_last_updated_fmt: "%b %d, %Y"
+    suppress_warnings: ["mystnb.unknown_mime_type"]
+
+    # To avoid warning about default changing due to
+    # https://github.com/pydata/pydata-sphinx-theme/issues/1492
+    # html_theme_options:
+    #   navigation_with_keys: false
 parse:
   myst_enable_extensions:
     - "amsmath"
